@@ -36,6 +36,7 @@ spec:
       steps{
         container('maven'){
           sh 'mvn sonar:sonar -f ./complete/pom.xml'
+          echo "hey"
         }}}
   }
   post {
